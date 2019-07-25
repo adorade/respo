@@ -1,0 +1,11 @@
+//- partials/_scripts.pug
+block external-js
+  // jQuery first... then custom scripts
+  script(defer
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous")
+
+block custom-js
+  //- script(defer src="js/script.js")
+  script(defer src="js/script.min.js")

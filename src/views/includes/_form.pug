@@ -1,0 +1,13 @@
+//- includes/_form.pug
+section.url
+  form#urlform(name="urlform" action="#")
+    .input-group
+      .input-group-prepend
+        span.input-group-text URL
+
+      input.form-control#url(
+        name="url" type="url" placeholder="https://adorade.ro"
+        aria-label="https://adorade.ro" aria-describedby="basic-url")
+
+      .input-group-append
+        button.btn.btn-primary(type="button") GO
