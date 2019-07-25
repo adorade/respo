@@ -1,0 +1,25 @@
+//- partials/_meta.pug
+//- META
+// Required meta tags
+meta(charset="utf-8")
+meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+// Primary Meta Tags
+if title
+  title= title
+else
+  title Respo - Reponsive design check tool
+if description
+  meta(name="description" content= description)
+else
+  meta(
+    name="description"
+    content="See how your website looks on lots of device sizes, desktop, laptop, ipad & iphone.")
+
+//- OPEN GRAPH
+// Open Graph / Facebook
+meta(property="og:title" content="Respo")
+meta(property="og:type" content="website")
+meta(property="og:image" content="https://res.adorade.ro/images/respo-og.jpg")
+meta(property="og:description" content="Show off how responsive design looks across different browsers easily with this 4 in 1 viewport tool.")
+meta(property="og:url" content="https://res.adorade.ro")

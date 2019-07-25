@@ -1,0 +1,22 @@
+{
+    "name": "Respo App",
+    "short_name": "Respo",
+    "icons": [
+        {
+            "src": "statics/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "statics/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#6a0303",
+    "background_color": "#6a0303",
+    "start_url": "/?utm_source=app",
+    "display": "standalone",
+    "orientation": "portrait",
+    "description": "Reponsive design check tool"
+}

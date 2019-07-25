@@ -1,0 +1,21 @@
+//- layout/_base.pug
+html(lang="en" prefix="og: http://ogp.me/ns#")
+
+  include ../partials/_stamp
+  block setting
+
+  head
+    block head
+      include ../partials/_meta
+      include ../partials/_statics
+    block fonts
+      include ../partials/_fonts
+    block styles
+      include ../partials/_styles
+
+  body
+    block body
+      include ../includes/_display
+      include ../includes/_form
+    block scripts
+      include ../partials/_scripts
