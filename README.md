@@ -2,7 +2,7 @@
 [![license](https://img.shields.io/github/license/adorade/respo.svg?longCache=true&style=flat-square)](https://mit-license.org)
 [![website](https://img.shields.io/website/https/res.adorade.ro.svg?longCache=true&style=flat-square)](https://res.adorade.ro/)
 [![devDependencies Status](https://img.shields.io/david/dev/adorade/respo.svg?longCache=true&style=flat-square)](https://david-dm.org/adorade/respo?type=dev)
-[![Build Status](https://img.shields.io/travis/adorade/respo/master.svg?logo=travis&style=flat-square)](https://travis-ci.com/adorade/respo)
+[![Build Status](https://img.shields.io/travis/com/adorade/respo/master.svg?logo=travis&style=flat-square)](https://travis-ci.com/adorade/respo)
 [![Greenkeeper badge](https://badges.greenkeeper.io/adorade/respo.svg?style=flat-square)](https://greenkeeper.io/)
 
 # Respo
