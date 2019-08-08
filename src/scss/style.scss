@@ -11,24 +11,11 @@ body {
   font-family: Roboto, sans-serif;
 }
 
-.wrapper {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 .display {
   position: relative;
-  left: 0;
-  width: 100%;
-  height: 600px;
-  margin: 85px auto 0;
-
-  div {
-    overflow: hidden;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
+  width: 1200px;
+  height: 730px;
+  margin: 140px auto;
 }
 
 .url {
@@ -46,144 +33,100 @@ body {
   }
 }
 
-iframe {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background-color: #fff;
-  transform: scale(.222);
-  transform-origin: top left;
+.watch,
+.mobile,
+.tablet,
+.laptop,
+.desktop {
+  position: absolute;
+  overflow: hidden;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  line-height: 0;
+
+  .inner {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    border: 0;
+    background-color: #000;
+    transform: scale(.3);
+    transform-origin: top left;
+  }
+}
+
+.watch {
+  top: 440px;
+  left: 420px;
+  width: 152px;
+  height: 283px;
+  background-image: url(../images/apple-watch.png);
+
+  .inner {
+    top: 83px;
+    left: 29px;
+    width: 312px;
+    height: 390px;
+  }
 }
 
 .mobile {
-  position: absolute;
-  top: 375px;
-  left: 300px;
-  z-index: 5;
-  width: 95px;
-  height: 196px;
-  background-image: url(../images/iphone-optimised.png);
+  top: 390px;
+  left: 230px;
+  width: 164px;
+  height: 300px;
+  background-image: url(../images/iphone-portrait.png);
 
-  iframe {
-    top: 32px;
-    left: 11px;
-    width: 412px;
-    height: 618px;
-    overflow-y: hidden;
-    transform: scale(.172);
+  .inner {
+    top: 40px;
+    left: 20px;
+    width: 414px;
+    height: 736px;
   }
 }
 
 .tablet {
-  position: absolute;
-  top: 230px;
-  left: 120px;
-  z-index: 3;
-  width: 258px;
-  height: 335px;
-  background-image: url(../images/ipad-optimised.png);
+  top: 300px;
+  left: 40px;
+  width: 273px;
+  height: 382px;
+  background-image: url(../images/ipad-portrait.png);
 
-  iframe {
-    top: 37px;
-    left: 41px;
+  .inner {
+    top: 38px;
+    left: 22px;
     width: 768px;
-    height: 1018px;
-    overflow-y: hidden;
-    transform: scale(.228);
+    height: 1024px;
   }
 }
 
 .laptop {
-  position: absolute;
-  top: 264px;
-  left: 560px;
-  z-index: 2;
-  width: 477px;
-  height: 307px;
-  background-image: url(../images/laptop-screen-optimised.png);
+  top: 340px;
+  left: 620px;
+  width: 566px;
+  height: 340px;
+  background-image: url(../images/laptop-screen.png);
 
-  iframe {
-    top: 26px;
-    left: 60px;
-    width: 1280px;
-    height: 800px;
-    transform: scale(.278);
+  .inner {
+    top: 27px;
+    left: 67px;
+    width: 1440px;
+    height: 900px;
   }
 }
 
 .desktop {
-  position: absolute;
   top: 0;
-  left: 220px;
-  z-index: 1;
-  width: 566px;
-  height: 537px;
-  background-image: url(../images/large-screen-optimised.png);
+  left: 136px;
+  width: 831px;
+  height: 642px;
+  background-image: url(../images/large-screen.png);
 
-  iframe {
-    top: 38px;
-    left: 28px;
-    width: 1600px;
-    height: 1000px;
-    transform: scale(.3181);
-  }
-}
-
-@media (max-width: 1200px) {
-  .display {
-    height: 550px;
-    transform: scale(.95);
-  }
-
-  .desktop { left: 180px; }
-  .laptop { left: 520px; }
-  .tablet { left: 80px; }
-  .mobile { left: 260px; }
-}
-
-@media (max-width: 992px) {
-  .display {
-    height: 500px;
-    transform: scale(.8);
-  }
-
-  .desktop { left: 100px; }
-  .laptop { left: 440px; }
-  .tablet { left: 0; }
-  .mobile { left: 180px; }
-}
-
-@media (max-width: 768px) {
-  .display {
-    left: -60px;
-    height: 450px;
-    transform: scale(.65);
-  }
-}
-
-@media (max-width: 650px) {
-  .display {
-    left: -70px;
-    transform: scale(.55);
-  }
-}
-
-@media (max-width: 576px) {
-  .display {
-    transform: scale(.45);
-  }
-}
-
-@media (max-width: 480px) {
-  .display {
-    left: -95px;
-    transform: scale(.38);
-  }
-}
-
-@media (max-width: 320px) {
-  .display {
-    transform: scale(.33);
+  .inner {
+    top: 37px;
+    left: 32px;
+    width: 2560px;
+    height: 1440px;
   }
 }
