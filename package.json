@@ -8,8 +8,6 @@
   "homepage": "https://adorade.ro",
   "scripts": {
     "verify": "node -v && npm -v && yarn -v && git --version && gulp -v",
-    "lint:scss": "stylelint ./src/scss/**/*.scss --syntax scss --fix > ./logs/cli/lint-style.txt",
-    "lint:js": "eslint ./src/es6/ > ./logs/cli/lint-script.txt",
     "dev": "gulp",
     "build": "gulp build",
     "start": "gulp serve:watch",
