@@ -11,7 +11,7 @@ import { src, dest, lastRun, $, bs, magenta, green, paths, opts } from '../util'
 
 export function cleanPages () {
   $.fancyLog(`${green('-> Clean all pages')} in ${magenta(paths.views.dest)} folder`);
-  return $.del(paths.views.dest);
+  return $.del(paths.views.del);
 }
 cleanPages.displayName = 'clean:pages';
 cleanPages.description = 'Clean up html files';

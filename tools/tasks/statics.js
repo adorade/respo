@@ -12,7 +12,7 @@ import { src, dest, lastRun, $, bs, magenta, green, paths, opts } from '../util'
 export function cleanStatics () {
   $.fancyLog(`${green('-> Clean up')} ${magenta(paths.statics.dest)} folder`);
   $.fancyLog(`${green('-> Clean up')} all ${magenta('conf')} files`);
-  return $.del([paths.statics.dest, paths.statics.ext]);
+  return $.del([paths.statics.dest, paths.statics.del]);
 }
 cleanStatics.displayName = 'clean:statics';
 cleanStatics.description = 'Clean up statics folders';

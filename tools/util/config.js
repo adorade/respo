@@ -37,13 +37,13 @@ export const paths = {
       icons: `${dirs.dest}/statics/`,
       conf: `${dirs.dest}/`
     },
-    ext: '**/*.{json,txt,webmanifest,xml}'
+    del: `${dirs.dest}/**/*.{json,txt,webmanifest,xml}`
   },
   views: {
     src: [`${dirs.src}/views/**/*.pug`, `!${dirs.src}/views/**/_*.pug`],
     all: `${dirs.src}/views/**/*.pug`,
     dest: `${dirs.dest}/`,
-    del: `${dirs.dest}/*.html`
+    del: `${dirs.dest}/**/*.html`
   },
   test: {
     js: `${dirs.test}/js/`
