@@ -4,7 +4,7 @@
 [![devDependencies Status](https://img.shields.io/david/dev/adorade/respo.svg)](https://david-dm.org/adorade/respo?type=dev)
 [![Travis (.com)](https://img.shields.io/travis/com/adorade/respo?logo=travis)](https://travis-ci.com/adorade/respo)
 [![Greenkeeper badge](https://badges.greenkeeper.io/adorade/respo.svg)](https://greenkeeper.io/)
-[![GitHub Actions status](https://github.com/actions/setup-node/workflows/Main%20workflow/badge.svg)](https://github.com/adorade/respo/actions)
+[![GitHub Actions status](https://github.com/adorade/respo/workflows/Node%20CI/badge.svg)](https://github.com/adorade/respo/actions)
 
 # Respo
 
