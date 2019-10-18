@@ -1,0 +1,18 @@
+//- screen.pug
+extends layout/_base
+
+block append styles
+  style.
+    body {background-color: transparent;}
+
+block body
+  .wrapper
+    section.display
+      .desktop#desktop
+        iframe.inner(src="https://adorade.ro")
+      .laptop#laptop
+        iframe.inner(src="https://adorade.ro")
+      .tablet#tablet
+        iframe.inner(src="https://adorade.ro")
+      .mobile#mobile
+        iframe.inner(src="https://adorade.ro")
