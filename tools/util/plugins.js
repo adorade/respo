@@ -17,9 +17,9 @@ export const $ = require('gulp-load-plugins')({
   }
 });
 
+// Colors for fancy log
+export { bgBlue, bgRed, green, magenta, red } from 'ansi-colors';
+
 // Load others modules
 export const bs = require('browser-sync').create();
 export const fs = require('fs');
-
-// Colors for fancy log
-export { bgBlue, bgRed, green, magenta, red } from 'ansi-colors';

@@ -4,7 +4,7 @@
  * Licensed under MIT
  * ========================================================================== */
 
-import { src, dest, lastRun, $, bs, magenta, green, paths, opts, banner } from '../util';
+import { src, dest, lastRun, $, bs, green, magenta, paths, opts, banner } from '../util';
 
 // For debugging usage:
 // .pipe($.debug({ title: 'unicorn:' }))
