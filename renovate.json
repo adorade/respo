@@ -1,7 +1,5 @@
 {
   "extends": [
-    "config:base",
-    "schedule:nonOfficeHours"
-  ],
-  "timezone": "Europe/Bucharest"
+    "config:base"
+  ]
 }
