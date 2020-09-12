@@ -50,7 +50,6 @@
 // --------------------------
 // Carbon Fibre
 // Usage:  @include radial-gradient-carbon-fibre(#dddddd);
-// stylelint-disable value-list-comma-space-after, value-list-comma-newline-after
 @mixin carbon-fibre($fallback) {
   background-image:
     radial-gradient(rgb(0, 0, 0) 15%, transparent 16%),
@@ -84,4 +83,3 @@
   background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
   background-color: $fallback; // default value: #269
 }
-// stylelint-enable
