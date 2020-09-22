@@ -12,12 +12,10 @@ language: node_js
 node_js:
   - "lts/*"
 
-os:
-  - linux
-  - osx
+dist: focal
 
 git:
-  depth: 10
+  depth: 4
 
 cache:
   yarn: true
