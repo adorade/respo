@@ -3,9 +3,9 @@ name: Node CI
 
 on:
   push:
-    branches: [master, content, develop]
+    branches: [main, content, develop]
   pull_request:
-    branches: master
+    branches: main
 
 jobs:
   build:
