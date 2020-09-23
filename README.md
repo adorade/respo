@@ -1,4 +1,4 @@
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/adorade/respo.svg?color=green&logo=github)](https://github.com/adorade/respo/blob/master/package.json)
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/adorade/respo.svg?color=green&logo=github)](https://github.com/adorade/respo/blob/main/package.json)
 [![license](https://img.shields.io/github/license/adorade/respo.svg)](https://mit-license.org)
 [![Website](https://img.shields.io/website/https/res.adorade.ro.svg?logo=google-chrome)](https://res.adorade.ro/)
 [![devDependencies Status](https://img.shields.io/david/dev/adorade/respo.svg)](https://david-dm.org/adorade/respo?type=dev)
