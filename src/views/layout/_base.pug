@@ -14,10 +14,15 @@ html(lang="en" prefix="og: http://ogp.me/ns#")
       include ../partials/_styles
       include ../partials/_analytics
 
-  body
-    block body
+  if bodyClass
+    body(class=`${bodyClass}`)
       .wrapper
-        include ../includes/_display
-        include ../includes/_form
-    block scripts
-      include ../partials/_scripts
+        block wrapper
+      block scripts
+        include ../partials/_scripts
+  else
+    body
+      .wrapper
+        block wrapper
+      block scripts
+        include ../partials/_scripts

@@ -1,11 +1,8 @@
 //- screen.pug
 extends layout/_base
 
-block append styles
-  style.
-    body {background-color: #212529;}
+prepend setting
+  - bodyClass = 'random';
 
 block wrapper
   include includes/_four-display
-
-block scripts
