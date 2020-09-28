@@ -32,3 +32,15 @@ if (first !== 'undefined') {
   $('iframe').attr('src', (first))
   $('#url').attr('value', (first))
 }
+
+function randomColorChange () {
+  let hue =
+    'rgba(' +
+    Math.floor(Math.random() * 256) + ',' +
+    Math.floor(Math.random() * 256) + ',' +
+    Math.floor(Math.random() * 256) + ', 0.6)'
+
+  return hue
+}
+
+$('.random').css('background-color', randomColorChange)
