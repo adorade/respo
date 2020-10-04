@@ -50,17 +50,21 @@ export function transpile () {
 transpile.displayName = 'transpile:es';
 transpile.description = 'Transpile ES via Babel';
 
-export function uglify () {
+export function minifyJs () {
   $.fancyLog(`${green('-> Minify JS...')}`);
   return src(paths.scripts.filter, {
-    // since: lastRun(uglify)
+    // since: lastRun(minifyJs)
   })
-    .pipe($.uglify(opts.uglify))
+    .pipe($.gTerser(opts.terser)
+      .on('error', () => {
+        this.emit('end');
+      })
+    )
     .pipe($.rename({ extname: '.min.js' }))
     .pipe($.header(banner()))
     .pipe($.size(opts.size))
     .pipe(dest(paths.scripts.dest))
     .pipe(bs.stream({ match: '**/*.min.js' }));
 }
-uglify.displayName = 'min:js';
-uglify.description = 'Minify JS files';
+minifyJs.displayName = 'min:js';
+minifyJs.description = 'Minify JS files';

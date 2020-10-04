@@ -6,8 +6,8 @@
 
 export {
   checks, clean,                                        // Checks and Clean
-  cleanCss, lintScss, compile, minify,                  // Styles
-  cleanJs, lintEs, transpile, uglify,                   // Scripts
+  cleanCss, lintScss, compile, minifyCss,               // Styles
+  cleanJs, lintEs, transpile, minifyJs,                 // Scripts
   cleanImages, imagine, convert,                        // Images
   cleanStatics, favicons, statica,                      // Statics
   cleanPages, lintPages, pagile,                        // Pages
