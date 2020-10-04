@@ -8,7 +8,7 @@ import {
   series, watch, $, bs, magenta, green, red, bgBlue, bgRed, paths, opts, dirs
 } from '../util';
 import {
-  lintScss, compile, minify, lintEs, transpile, uglify,
+  lintScss, compile, minifyCss, lintEs, transpile, minifyJs,
   imagine, convert, favicons, statica, lintPages, pagile
 } from './';
 
@@ -32,12 +32,12 @@ export function serve () {
     {
       name: 'Styles',
       paths: paths.styles.src,
-      tasks: [lintScss, compile, minify]
+      tasks: [lintScss, compile, minifyCss]
     },
     {
       name: 'Scripts',
       paths: paths.scripts.src,
-      tasks: [lintEs, transpile, uglify]
+      tasks: [lintEs, transpile, minifyJs]
     },
     {
       name: 'Images',

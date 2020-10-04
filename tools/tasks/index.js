@@ -4,11 +4,11 @@
  * Licensed under MIT
  * ========================================================================== */
 
-export { checks } from './checks';                               // Checks
-export { clean } from './clean';                                 // Clean
-export { cleanCss, lintScss, compile, minify } from './styles';  // Styles
-export { cleanJs, lintEs, transpile, uglify } from './scripts';  // Scripts
-export { cleanImages, imagine, convert } from './images';        // Images
-export { cleanStatics, favicons, statica } from './statics';     // Statics
-export { cleanPages, lintPages, pagile } from './pages';         // Pages
-export { serve } from './serve';                                 // Serve and Watch
+export { checks } from './checks';                                  // Checks
+export { clean } from './clean';                                    // Clean
+export { cleanCss, lintScss, compile, minifyCss } from './styles';  // Styles
+export { cleanJs, lintEs, transpile, minifyJs } from './scripts';   // Scripts
+export { cleanImages, imagine, convert } from './images';           // Images
+export { cleanStatics, favicons, statica } from './statics';        // Statics
+export { cleanPages, lintPages, pagile } from './pages';            // Pages
+export { serve } from './serve';                                    // Serve and Watch

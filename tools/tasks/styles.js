@@ -41,7 +41,7 @@ export function compile () {
 compile.displayName = 'compile:scss';
 compile.description = 'Compile SCSS files';
 
-export function minify () {
+export function minifyCss () {
   $.fancyLog(`${green('-> Minify CSS...')}`);
   return src(paths.styles.filter)
     .pipe($.csso(opts.csso))
@@ -51,5 +51,5 @@ export function minify () {
     .pipe(dest(paths.styles.dest))
     .pipe(bs.stream({ match: '**/*.min.css' }));
 }
-minify.displayName = 'min:css';
-minify.description = 'Minify CSS files';
+minifyCss.displayName = 'min:css';
+minifyCss.description = 'Minify CSS files';

@@ -40,7 +40,7 @@
     "gulp-sass": "4.1.0",
     "gulp-size": "3.0.0",
     "gulp-stylelint": "13.0.0",
-    "gulp-uglify": "3.0.2",
+    "gulp-terser-js": "5.2.2",
     "gulp-webp": "4.0.1",
     "stylelint": "13.7.2",
     "stylelint-config-standard": "20.0.0",
