@@ -1,10 +1,13 @@
 //- partials/_analytics.pug
-//--- Google Analytics (analytics.js) - Async tracking snippet
+//--- Global site tag (gtag.js) - Google Analytics
+script(async src="https://www.googletagmanager.com/gtag/js?id=UA-81488219-1")
 script.
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-  ga('create', 'UA-81488219-1', 'auto', {
-    //- Set the user ID using signed-in user_id.
-    userId: 'Us19Er69'
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-81488219-1', {
+    'user_id': 'Us19Er69'
   });
-  ga('send', 'pageview');
-script(async src="https://www.google-analytics.com/analytics.js")
+  gtag('set', {
+    'cookie_flags': 'SameSite=None;Secure'
+  });
