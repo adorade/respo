@@ -14,10 +14,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@babel/cli": "7.13.14",
-    "@babel/core": "7.13.14",
+    "@babel/cli": "7.13.16",
+    "@babel/core": "7.14.0",
     "@babel/eslint-parser": "7.13.14",
-    "@babel/preset-env": "7.13.12",
+    "@babel/preset-env": "7.14.1",
     "ansi-colors": "4.1.1",
     "browser-sync": "2.26.14",
     "del": "6.0.0",
