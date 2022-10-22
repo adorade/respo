@@ -5,16 +5,18 @@ on:
   push:
     branches: [main, content, develop]
   pull_request:
-    branches: main
+    branches: [main]
+  schedule:
+  - cron: 0 9 * * SAT
 
 jobs:
   build:
-    name: Build on node ${{ matrix.node_version }} and ${{ matrix.os }}
+    name: Build on node ${{ matrix.node }} and ${{ matrix.os }}
 
     strategy:
       matrix:
-        os: [ubuntu-20.04]
-        node_version: [12.x]
+        os: [ubuntu-latest]
+        node: [14]
 
     runs-on: ${{ matrix.os }}
 
@@ -24,19 +26,19 @@ jobs:
       uses: actions/checkout@v3
 
     # use node.js matrix
-    - name: Use Node.js ${{ matrix.node_version }}
-      uses: actions/setup-node@v2-beta
+    - name: Use Node.js ${{ matrix.node }}
+      uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node_version }}
+        node-version: ${{ matrix.node }}
 
-    # install dependencies, verify and build
-    - name: Clean install dependencies and build
-      run: |
-        yarn install
-        yarn run verify
-        yarn run build
-      env:
-        CI: true
+    # install dependencies
+    - name: Clean install dependencies
+      run: yarn install
 
-    # deploy web app using publish profile credentials
-    # coming soon
+    # verify build tools
+    - name: Verify build tools
+      run: yarn run verify
+
+    # build proccess
+    - name: Build proccess
+      run: yarn run build
