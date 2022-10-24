@@ -1,6 +1,6 @@
 /*!
- * Respo (v1.0.0): gulpfile.mjs
- * Copyright (c) 2019 Adorade (https://res.adorade.ro)
+ * Respo (v2.0.0): gulpfile.mjs
+ * Copyright (c) 2019-22 Adorade (https://res.adorade.ro)
  * Licensed under MIT
  * ========================================================================== */
 

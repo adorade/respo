@@ -1,6 +1,6 @@
 /*!
- * Respo (v1.0.0): .eslintrc.js
- * Copyright (c) 2019 Adorade (https://adorade.ro)
+ * Respo (v2.0.0): .eslintrc.js
+ * Copyright (c) 2019-22 Adorade (https://adorade.ro)
  * Licensed under MIT
  * ========================================================================== */
 // https://eslint.org/docs/user-guide/configuring
