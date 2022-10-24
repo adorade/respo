@@ -1,6 +1,6 @@
 /*!
- * Respo (v1.0.0): tools/utils/paths.mjs
- * Copyright (c) 2019 Adorade (https://adorade.ro)
+ * Respo (v2.0.0): tools/utils/paths.mjs
+ * Copyright (c) 2019-22 Adorade (https://adorade.ro)
  * Licensed under MIT
  * ========================================================================== */
 
