@@ -1,19 +1,18 @@
 /*!
- * Respo (v1.0.0): tools/util/options.js
+ * Respo (v1.0.0): tools/utils/options.mjs
  * Copyright (c) 2019 Adorade (https://adorade.ro)
  * Licensed under MIT
  * ========================================================================== */
 
-import { paths } from './config';
+import { paths } from './paths.mjs';
 
 export const opts = {
   styles: {
     failAfterError: true,
     reportOutputDir: paths.logs.gulp,
     reporters: [
-      { formatter: 'string', save: 'styles.txt' }
-    ],
-    syntax: 'scss'
+      { formatter: 'string', console: true, save: 'styles.txt' }
+    ]
   },
   sass: {
     outputStyle: 'expanded',
@@ -46,11 +45,23 @@ export const opts = {
     gif: { interlaced: true },
     jpeg: { progressive: true },
     png: { optimizationLevel: 4 },
-    svg: { plugins: [{ removeViewBox: true }] },
-    webp: { // https://github.com/imagemin/imagemin-webp#options
+    svg: { plugins: [
+      {
+        name: 'removeViewBox',
+        active: true
+      }
+    ]},
+    general: {
+      verbose: false,
+      silent: true
+    },
+    webp: {
       preset: 'default',
       quality: 60
     }
+  },
+  puglint: {
+    // for more options see .pug-lintrc
   },
   pug: {
     doctype: 'html',

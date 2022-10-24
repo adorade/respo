@@ -1,8 +1,10 @@
 {
   "extends": [
     "config:base",
+    ":dependencyDashboardApproval",
     "schedule:monthly",
-    ":assignAndReview(adorade)"
+    ":assignAndReview(adorade)",
+    ":maintainLockFilesMonthly"
   ],
   "timezone": "Europe/Bucharest",
   "labels": ["deps"],
@@ -27,11 +29,5 @@
       "groupName": "gulp packages",
       "labels": ["gulp"]
     }
-  ],
-  "lockFileMaintenance": {
-    "enabled": true,
-    "extends": [
-      "schedule:monthly"
-    ]
-  }
+  ]
 }

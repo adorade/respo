@@ -40,12 +40,21 @@ module.exports = {
   overrides: [
     {
       files: [
-        "gulpfile.esm.js",
-        "tools/**/*.js"
+        "gulpfile.mjs",
+        "tools/**/*.mjs",
+        ".eslintrc.js"
       ],
       rules: {
         semi: ["error", "always"]
       }
+    },
+    {
+      files: [
+        ".eslintrc.js"
+      ],
+      rules: {
+        quotes: ["error", "double"]
+      }
     }
   ]
-}
+};

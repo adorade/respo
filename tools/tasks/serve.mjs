@@ -1,16 +1,16 @@
 /*!
- * Respo (v1.0.0): tools/tasks/serve.js
+ * Respo (v1.0.0): tools/tasks/serve.mjs
  * Copyright (c) 2019 Adorade (https://adorade.ro)
  * Licensed under MIT
  * ========================================================================== */
 
 import {
-  series, watch, $, bs, magenta, green, red, bgBlue, bgRed, paths, opts, dirs
-} from '../util';
+  series, watch, fancyLog, bgBlue, bgRed, green, magenta, red, paths, opts, dirs, bs
+} from '../utils/index.mjs';
 import {
   lintScss, compile, minifyCss, lintEs, transpile, minifyJs,
   imagine, convert, favicons, statica, lintPages, pagile
-} from './';
+} from './index.mjs';
 
 export function serve () {
   bs.init({
@@ -23,7 +23,7 @@ export function serve () {
   });
 
   function watchEvent (path, event, task) {
-    $.fancyLog(
+    fancyLog(
       `File ${magenta(path)} was ${green(event)} running ${red(task)}`
     );
   }
@@ -62,10 +62,10 @@ export function serve () {
   ];
 
   for (let watcher of watchers) {
-    $.fancyLog(bgRed(`Watching ${watcher.name}`));
+    fancyLog(bgRed(`Watching ${watcher.name}`));
 
     for (let p of [watcher.paths]) {
-      $.fancyLog(bgBlue('Source: '), magenta(p));
+      fancyLog(bgBlue('Source: '), magenta(p));
     }
 
     let taskNames = [];

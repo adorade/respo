@@ -1,10 +1,11 @@
 /*!
- * Respo (v1.0.0): tools/util/banner.js
+ * Respo (v1.0.0): tools/utils/banner.mjs
  * Copyright (c) 2019 Adorade (https://adorade.ro)
  * Licensed under MIT
  * ========================================================================== */
 
-const pkg = require(`${process.cwd()}/package.json`);
+import { fs } from './index.mjs';
+const pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 
 const year = new Date(
   process.env.SOURCE_DATE_EPOCH ? process.env.SOURCE_DATE_EPOCH * 1000 : new Date().getTime()

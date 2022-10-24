@@ -1,5 +1,5 @@
 /*!
- * Respo (v1.0.0): tools/index.js
+ * Respo (v1.0.0): tools/index.mjs
  * Copyright (c) 2019 Adorade (https://adorade.ro)
  * Licensed under MIT
  * ========================================================================== */
@@ -12,4 +12,4 @@ export {
   cleanStatics, favicons, statica,                      // Statics
   cleanPages, lintPages, pagile,                        // Pages
   serve                                                 // Serve and Watch
-} from './tasks';
+} from './tasks/index.mjs';

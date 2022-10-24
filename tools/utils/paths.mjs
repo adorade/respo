@@ -1,5 +1,5 @@
 /*!
- * Respo (v1.0.0): tools/util/config.js
+ * Respo (v1.0.0): tools/utils/paths.mjs
  * Copyright (c) 2019 Adorade (https://adorade.ro)
  * Licensed under MIT
  * ========================================================================== */
