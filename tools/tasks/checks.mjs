@@ -1,5 +1,5 @@
 /*!
- * Respo (v2.0.0): tools/tasks/checks.mjs
+ * Respo (v2.0.1): tools/tasks/checks.mjs
  * Copyright (c) 2019-22 Adorade (https://adorade.ro)
  * Licensed under MIT
  * ========================================================================== */

@@ -1,5 +1,5 @@
 /*!
- * Respo (v2.0.0): .babelrc.js
+ * Respo (v2.0.1): .babelrc.js
  * Copyright (c) 2019-22 Adorade (https://adorade.ro)
  * Licensed under MIT
  * ========================================================================== */

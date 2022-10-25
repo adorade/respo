@@ -1,5 +1,5 @@
 /*!
- * Respo (v2.0.0): tools/utils/plugins.mjs
+ * Respo (v2.0.1): tools/utils/plugins.mjs
  * Copyright (c) 2019-22 Adorade (https://adorade.ro)
  * Licensed under MIT
  * ========================================================================== */
